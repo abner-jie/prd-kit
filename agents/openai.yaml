@@ -2,6 +2,3 @@ interface:
   display_name: "PRD Kit"
   short_description: "Business-readable cross-functional PRDs"
   default_prompt: "Use $prd-kit to choose Mode 1 or Mode 2 and create a business-readable PRD."
-
-policy:
-  allow_implicit_invocation: false
