@@ -1,9 +1,15 @@
 ---
 name: prd-kit
-description: "Create cross-functional PRDs through two modes: Mode 1 uses grill-me to settle the large product framework first, then formats it for review before to-spec turns it into an implementation spec; Mode 2 uses grill-me plus to-spec directly to output a PRD. Use when the user asks to write, formalize, review, or publish a PRD/spec readable by business stakeholders and executable by developers."
+description: "Manual-only workflow for creating business-readable, cross-functional PRDs through two modes. Invoke explicitly with $prd-kit to draft, review, or publish a PRD/spec for business stakeholders and developers."
 ---
 
 # PRD Kit
+
+## Invocation Guard
+
+Run this skill only when the user explicitly invokes `$prd-kit`. Do not infer invocation from requests that mention PRDs, specifications, planning, product requirements, or this skill by name without `$prd-kit`.
+
+Without an explicit `$prd-kit` invocation, do not start discovery, grilling, document generation, file writes, or external-work-item synchronization under this workflow.
 
 ## Operating Model
 
